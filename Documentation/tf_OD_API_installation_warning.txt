@@ -1,0 +1,3 @@
+INFO : TF env setup was working fine till october 2020. But that step(installation by anaconda)(since anaconda supports till 2.2.0. but TF2 OD API setup require latest version so it install with pip, hence GPU won't available but u can do with CPU) is not working with GPU. Should manually install CUDA , CUDnn if you want to run on GPU. If you are ok with running of CPU itself then you can follow the documentation itself.
+
+if you want the processed "models/research/ob.." folder, download from this link :  --
