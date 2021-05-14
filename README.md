@@ -1,5 +1,10 @@
 # Heatmap-and-attention-span
-when a a video file(store, malls, etc..) is put into a specified target folder, then for that video footage heatmap will be generated and heatcount(how many people went through that spot) at a particular spot and how total time spent by the people at a particular spot.    Used Effdet-7 for person object detection and Graph network technique for Multi object tracking.
+when a a video file(store, malls, etc..) is put into a specified target folder, then for that video footage heatmap will be generated and heatcount(how many people went through that spot) at a particular spot and how total time spent by the people at a particular spot and these four output will be save in a target output path seperately.    
+ *Used Effdet-7 for person object detection and Graph network technique for Multi object tracking.*
+
+# to execute the code and installions.
+   Go through to Documentation/heatmap_attspan_doc.pdf
+   NOTE : TF2 Object dection API setup with TF installed via anaconda(supported with GPU till october 2020). But now if you follow the doc, you will able to install only CPU supported env. Because when running setup.py for TF OD API setup, it looks for latest and anaconda doesnt have now and only pip has. But pip wont manage CUDA and cudnn like anaconda by itself. So if you want to install with GPU support you should manually install CUDA and CUDNN, steps for that also attached as .txt file.
 
 # output  video link:  
 https://www.youtube.com/watch?v=DHGLfOiaB-E
