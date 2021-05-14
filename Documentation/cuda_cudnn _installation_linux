@@ -1,0 +1,22 @@
+1)cuda installation:
+#download and install from the official cuda nvidia archive site.
+#### type in search box : cuda archive and press enter.. you will get it
+------------------------------------------------------
+
+2) cudnn installations:
+### download from the official cudnn nvidia archive site. and no installations step, but .. run below commands(which is just copy commands, which can be done manually also)
+#### type in search box : cudnn archive and press enter.. you will get it after you login with your nvidia account.
+
+$ tar -xzvf cudnn-11.0-linux-x64-v8.0.2.39.tgz           ##### or manually extract it
+$ sudo cp cuda/include/cudnn*.h /usr/local/cuda/include
+$ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+$ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
+----------------------------------------------------------
+
+3) Final env variables setup 
+
+## add below lines in ~/.bashrc and note the right cuda version assigned:
+
+
+export PATH=/usr/local/cuda-11.2/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-11.2/lib64:$LD_LIBRARY_PATH
