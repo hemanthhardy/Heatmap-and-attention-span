@@ -1,0 +1,37 @@
+###  TENSORFLOW 2.2+ GPU ANACONDA ENV SETUP IN LINUX PLATFORM ###########
+
+-----------------run in terminal------------
+$ conda create --name tf-gpu python=3.7
+$ conda activate tf-gpu
+$ conda install -c anaconda tensorflow-gpu
+$ conda install -c conda-forge tqdm matplotlib
+----------------------------------------------
+
+-----------verification-----------------------
+$ python
+>>import tensorflow as tf
+>>print(tf.__version__)                # outputs version of tf
+>>print(tf.test.is_gpu_available())    # outputs- True/false ; true-GPU, false-CPU
+----------------------------------------------
+#########################################################################
+
+
+
+
+
+
+### TENSORFLOW OD API v0.2 SETUP IN ANY PLATFORM ########################
+
+NAVIGATE IN TENSORFLOW's 'models' DIRECTORY..(which I shared in a drive- an updated and easy installation)
+
+-----------------run in terminal---------------
+$ cd ~/heatmap_attspan/EDET7/models/research
+$ python -m pip install --use-feature=2020-resolver .           # must not show any error and should not terminate
+-----------------------------------------------
+
+-------------verification----------------------
+$ python object_detection/builders/model_builder_tf2_test.py    # must pass all test with 0 errors.
+-----------------------------------------------
+
+
+

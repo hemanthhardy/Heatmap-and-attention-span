@@ -1,0 +1,6 @@
+conda create --name pytor python=3
+conda activate pytor
+conda install pytorch=1.3 torchvision cudatoolkit=10.2 -c pytorch
+conda install -c conda-forge tqdm opencv matplotlib
+conda install requests
+conda install -c anaconda seaborn
