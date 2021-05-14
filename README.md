@@ -20,3 +20,10 @@ https://www.youtube.com/watch?v=DHGLfOiaB-E
     4) from (2) and (3) average time spent by an individual whe he or she comes into a particular spot   :
         ![res_avgspan](https://user-images.githubusercontent.com/28312002/118290429-0f800480-b4f4-11eb-8955-747b79fa0cc8.png)
 
+# Project Draw Backs:
+  1) occlutions errors can be only avoided when an person is detect within some time and he/she should be in the same posture/ appear like the same like when they got occluded before.
+  2) But if the were occluded for more than a specfic period and they didnt get detected then they will considered as new person
+  3) or when detect within specfic time but looking different(in some other posture, or walked some way arround) aslso considered as new person
+  4) even if he/she went away from frame and came into again then also will be considered as a new person
+
+  The above drawbacks were the main challenge and researchers were still in engaged to find out solution for this.
